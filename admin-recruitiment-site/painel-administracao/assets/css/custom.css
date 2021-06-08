@@ -1,0 +1,13 @@
+.center-middle-screen {
+    margin: -150px 0 0 -150px;
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    height: 300px;
+    width: 300px;
+}
+
+.button-centered {
+    margin: 10px 0 0 0;
+    width: 100%;
+}

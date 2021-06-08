@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="assets/css/custom.css">
+    <title>Painel de Administração</title>
+</head>
+<body>
+    <div class="center-middle-screen">
+        <div class="container-form">
+            <form name="frm">
+                <div class="row">
+                    <div class="col-lg-12 col-md-12">
+                        <label for="txtNome" 
+                            class="control-label">
+                            Usuário: (*) 
+                        </label>
+                        <!-- <select name="selAtivo" id="selAtivo" ng-change="atualizarSaldo()" 
+                            ng-model="contaCorrente.ativo" 
+                            required ng-options="ativ as ativ.codigo for ativ in ativos track by ativ.id"
+                            class="form-control">
+                        </select> -->
+                        <input type="text" name="txtNome" id="txtNome" 
+                            required class="form-control" />
+                    </div>
+                    <div class="col-lg-12 col-md-12">
+                        <label for="txtSenha" 
+                            class="control-label">
+                            Senha: (*) 
+                        </label>
+                        <input type="password" name="txtSenha" id="txtSenha" 
+                            required class="form-control" />
+                    </div>
+                    <div class="d-grid gap-2">
+                        <button class="btn btn-primary button-centered" 
+                            type="submit">Entrar</button>
+                    </div>
+                    <div class="d-grid gap-2">
+                        <a href="#" class="button-centered">Esqueci minha senha</a>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="../node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.js"></script>
+</body>
+</html>
