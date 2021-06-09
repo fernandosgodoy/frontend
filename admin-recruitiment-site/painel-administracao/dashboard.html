@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" />
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css" integrity="sha384-y3tfxAZXuh4HwSYylfB+J125MxIs6mR5FOHamPBG064zB+AFeWH94NdvaCBm8qnd" crossorigin="anonymous" /> -->
     <link rel="stylesheet" href="assets/css/custom.css">
     <link rel="stylesheet" href="assets/css/dashboard.css">
     <title>Painel de Administração</title>
@@ -13,34 +14,9 @@
     
     <nav class="navbar navbar-default">
         <div class="container-fluid">
-            <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="dashboard.html">Dashboard</a>
+                <a class="navbar-brand" href="dashboard.html">Dashboard</a>
             </div>
-        
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-            <ul class="nav navbar-nav">
-                <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
-                <li><a href="#">Link</a></li>
-            </ul>
-            <form class="navbar-form navbar-left" role="search">
-                <div class="form-group">
-                <input type="text" class="form-control" placeholder="Search">
-                </div>
-                <button type="submit" class="btn btn-default">Submit</button>
-            </form>
-            <ul class="nav navbar-nav navbar-right">
-                <li><a href="../index.html">Encerrar</a></li>
-                <li class="dropdown">
-            </ul>
-            </div><!-- /.navbar-collapse -->
         </div><!-- /.container-fluid -->
     </nav>
       
@@ -49,15 +25,16 @@
         <!-- Sidebar -->
                 <!-- Sidebar -->
         <div id="sidebar-wrapper">
-        <ul id="sidebar_menu" class="sidebar-nav">
-                <li class="sidebar-brand"><a id="menu-toggle" href="#">Menu<span id="main_icon" class="glyphicon glyphicon-align-justify"></span></a></li>
-        </ul>
+            <ul id="sidebar_menu" class="sidebar-nav">
+                    <li class="sidebar-brand"><a id="menu-toggle" href="#">Menu<span id="main_icon" class="glyphicon glyphicon-align-justify"></span></a></li>
+            </ul>
             <ul class="sidebar-nav" id="sidebar"> 
                 <li><a href="cargos/listar.html">Cargos<span class="sub_icon glyphicon glyphicon-link"></span></a></li>    
                 <li><a href="vagas/listar.html">Vagas<span class="sub_icon glyphicon glyphicon-link"></span></a></li>
                 <li><a href="empresas/listar.html">Empresas<span class="sub_icon glyphicon glyphicon-link"></span></a></li>
                 <li><a href="candidatos/listar.html">Candidatos<span class="sub_icon glyphicon glyphicon-link"></span></a></li>
-                <li><a>Configurações<span class="sub_icon glyphicon glyphicon-link"></span></a></li>
+                <li><a href="#">Configurações<span class="sub_icon glyphicon glyphicon-link"></span></a></li>
+                <li><a href="index.html">Encerrar</a></li>
             </ul>
         </div>
             
@@ -65,32 +42,88 @@
         <div id="page-content-wrapper">
             <!-- Keep all page content within the page-content inset div! -->
             <div class="page-content inset">
+                
                 <div class="row">
                     <div class="col-md-12">
                         <p class="well lead">
-                            Lorem Ipsum is simply dummy 
-                            text of the printing and 
-                            typesetting industry. 
+                            Dashboard
                         </p>
                     </div>
-                </div>
-                <div class="row">
-                    <div class="col-lg-4 col-md-4">
-                        <h3>Total de Vagas</h3>
-                        <span>34</span>
+                    <div class="row">
+                        <div class="col-xl-4 col-sm-4 mb-4">
+                        <div class="card text-white bg-primary o-hidden h-100">
+                            <div class="card-body">
+                            <div class="card-body-icon">
+                                <i class="fa fa-fw fa-comments"></i>
+                            </div>
+                            <div class="mr-5">18 novos currículos</div>
+                            </div>
+                            <a class="card-footer text-white clearfix small z-1" href="#">
+                            <span class="float-left">View Details</span>
+                            <span class="float-right">
+                                <i class="fa fa-angle-right"></i>
+                            </span>
+                            </a>
+                        </div>
+                        </div>
+                        <div class="col-xl-4 col-sm-4 mb-4">
+                        <div class="card text-black bg-warning o-hidden h-100">
+                            <div class="card-body">
+                            <div class="card-body-icon">
+                                <i class="fa fa-fw fa-list"></i>
+                            </div>
+                            <div class="mr-5">Total de Vagas: 350</div>
+                            </div>
+                            <a class="card-footer text-black clearfix small z-1" href="#">
+                            <span class="float-left">View Details</span>
+                            <span class="float-right">
+                                <i class="fa fa-angle-right"></i>
+                            </span>
+                            </a>
+                        </div>
+                        </div>
+                        <div class="col-xl-4 col-sm-4 mb-4">
+                      <div class="card text-black bg-success o-hidden h-100">
+                        <div class="card-body">
+                          <div class="card-body-icon">
+                            <i class="fa fa-fw fa-shopping-cart"></i>
+                          </div>
+                          <div class="mr-5">10 Novos candidatos</div>
+                        </div>
+                        <a class="card-footer text-black clearfix small z-1" href="#">
+                          <span class="float-left">View Details</span>
+                          <span class="float-right">
+                            <i class="fa fa-angle-right"></i>
+                          </span>
+                        </a>
+                      </div>
                     </div>
-                    <div class="col-md-4">
-                        <h3>Total de Curriculos</h3>
-                        <span>6589</span>
+                    
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="row">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">Notificação de Usuários</h5>
+                                <h6 class="card-subtitle mb-2 text-muted">Gestão de ações</h6>
+                                <p class="card-text">
+                                    É possível fazer alguns disparos de e-mail para o usuarío. Veja as 
+                                    opções e configurações disponíveis.
+                                </p>
+                                <a href="#" class="card-link">Visualizar disparos</a>
+                                <a href="#" class="card-link">Gerenciar parâmetros</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-        
     </div>
 
     <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
     <script src="assets/js/dashboard.js"></script>
 </body>
 </html>

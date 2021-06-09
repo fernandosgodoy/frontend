@@ -31,3 +31,11 @@ ul li {
 .filter-button {
     margin: 25px 0;
 }
+
+.text-white {
+    color: #fff;
+}
+
+.text-black {
+    color: #000;
+}
