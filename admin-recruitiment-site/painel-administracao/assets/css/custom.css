@@ -11,3 +11,23 @@
     margin: 10px 0 0 0;
     width: 100%;
 }
+
+ul li {
+    list-style: none;
+}
+
+.horizontal-menu ul {
+    margin: 0 10px;
+}
+
+.horizontal-menu ul li {
+    float: left;
+}
+
+.filters-area {
+    margin: 10px 25px;
+}
+
+.filter-button {
+    margin: 25px 0;
+}
