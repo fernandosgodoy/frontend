@@ -51,3 +51,20 @@ function previous(from , to) {
     document.getElementById(from).classList.remove('is-visible');
     document.getElementById(to).classList.add('is-visible');
 }
+
+function doWork(from, to) {
+    document.getElementById(from).classList.remove('is-visible');
+    document.getElementById(to).classList.add('is-visible');
+}
+
+function restart() {
+    var from = 'send-success';
+    var to = 'name';
+    
+    document.getElementById(from).classList.remove('is-visible');
+    document.getElementById(to).classList.add('is-visible');
+}
+
+function eraseFields() {
+    
+}
