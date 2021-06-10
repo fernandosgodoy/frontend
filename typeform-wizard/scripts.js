@@ -2,20 +2,20 @@ let error = document.getElementById('validate');
 let label = document.getElementsByTagName("label");
 
 document.getElementById("name")
-  .addEventListener("keyup", function(e) {
-    if (e.keyCode === 13) {
-        e.preventDefault();
-      next("name", "email");
-    }
-  });
+    .addEventListener("keyup", function(e) {
+        if (e.keyCode === 13) {
+            e.preventDefault();
+        next("name", "email");
+        }
+    });
 
-  document.getElementById("email")
-  .addEventListener("keyup", function(e) {
-    if (e.keyCode === 13) {
-        e.preventDefault();
-        next('email','phone');
-    }
-  });
+document.getElementById("email")
+    .addEventListener("keyup", function(e) {
+        if (e.keyCode === 13) {
+            e.preventDefault();
+            next('email','phone');
+        }
+    });
 
   document.getElementById("phone")
   .addEventListener("keyup", function(e) {
@@ -32,7 +32,6 @@ document.getElementById("name")
       next('age','address');
     }
   });
- 
 
 function next(from, to) {
     error.innerHTML = "";
